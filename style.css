@@ -17,7 +17,7 @@
 }
 
 body {
-    background-image: url(img/bgani.gif);
+    background-image: url(img/btnani.gif);
     width: 100%;
     height: 100vh;
 }
@@ -27,7 +27,7 @@ body {
     text-align: center;
 }
 
-textarea{
+#content-textarea{
     background-color: black;
     color: var(--primary-text-color);
     margin-left: 3%;
@@ -45,19 +45,19 @@ p{
 .content .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-right: 10%;
 }
 
 .content-right-pannel{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     background-color: var(--primary-text-color);
     border-radius: 15px;
     width: 30%;
-    height: 90vh;
-    padding: 2%;
+    height: 85vh;
+    padding: 1%;
     box-shadow: 5px 3px 19px 6px var(--primary-text-color);
 }
 
@@ -77,11 +77,25 @@ button{
 }
 
 button:hover{
-    background-image: url(img/btnani.gif);
+    background-image: url(img/bgani.gif);
     color: var(--primary-text-color);
     width: 12em;
     transform: scale(1.1);
 }
+
+#crypt-message{
+    background-color: var(--primary-text-color);
+    font-size: 30px;
+    resize: none;
+    border: none;
+}
+
+
+
+#crypt-message::placeholder{
+    color: black;
+}
+
 
 #copy-message:hover{
     width: 10em;
