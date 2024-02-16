@@ -28,11 +28,21 @@ body {
     text-align: center;
 }
 
+.content .container{
+    display: flex;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 #content-textarea{
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
     margin-left: 3%;
     height: 90%;
+    outline: none;
     border: none;
     resize: none;
     font-size: 30px;
@@ -46,34 +56,26 @@ p{
     margin-top: 20px;
 }
 
-.content .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-right: 10%;
-}
-
 .content-right-pannel{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: var(--primary-text-color);
     border-radius: 15px;
-    width: 30%;
-    height: 85vh;
+    width: 400px;
+    height: 700px;
     padding: 1%;
     box-shadow: 5px 3px 19px 6px var(--primary-text-color);
 }
 
 button{
-    align-items: left;
     background-color: var(--primary-bg-color);
     justify-content: space-between;
     color: var(--primary-text-color);
     width: 10em;
     border-radius: 15px;
     padding: 1em 2em;
-    margin: 1em 3em 1em 3em;
+    margin: 10px 70px;
     font-size: 25px;
     border-color: var(--primary-text-color);
     outline: none;
@@ -83,7 +85,7 @@ button{
 button:hover{
     background-image: url(img/bgani.gif);
     color: var(--primary-text-color);
-    width: 12em;
+    width: 275px;
     transform: scale(1.1);
 }
 
@@ -91,16 +93,13 @@ button:active{
     transform: scale(1.2);
 }
 
-#crypt-message{
+#crypted-message{
     background-color: var(--primary-text-color);
     color: black;
     font-size: 30px;
+    outline: none;
     resize: none;
     border: none;
-}
-
-#copy-message:hover{
-    width: 10em;
 }
 
 footer{
