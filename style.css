@@ -30,9 +30,8 @@ body {
 
 .content .container{
     display: flex;
-    margin-right: 10%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
 }
@@ -58,19 +57,19 @@ p{
 
 .content-right-pannel{
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     background-color: var(--primary-text-color);
     border-radius: 15px;
-    width: 400px;
+    width: 60%;
     height: 700px;
-    padding: 1%;
+    padding: 1% 1%;
     box-shadow: 5px 3px 19px 6px var(--primary-text-color);
 }
 
 button{
     background-color: var(--primary-bg-color);
-    justify-content: space-between;
     color: var(--primary-text-color);
     width: 10em;
     border-radius: 15px;
@@ -116,4 +115,65 @@ footer{
     background-color: var(--primary-bg-color);
     width: 50x;
     height: 45px;
+}
+
+@media only screen and (max-width: 768px){
+    .content .container{
+        display: flex;
+        flex-direction: column;    
+    }
+
+    #content-textarea{
+        display: flex;
+        align-items: center;
+        height: 90%;
+        outline: none;
+        border: none;
+        resize: none;
+        font-size: 20px;
+    }
+
+    button{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 10em;
+        border-radius: 15px;
+        padding: 1em 2em;
+        margin: 10px 70px;
+        font-size: 20px;
+        outline: none;
+        transition-duration: 0.4s;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    button:hover{
+        width: 200px;
+        transform: scale(1.1);
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #myname{
+        width: 90%;
+        align-items: center;
+    }
+
+    .content-right-pannel{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 15px;
+        width: 80%;
+        padding: 1% 1%;
+    }
+
+    #crypted-message{
+        font-size: 2em;
+    }
+
 }
