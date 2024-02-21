@@ -20,7 +20,6 @@
 body {
     width: auto;
     height: auto;
-    align-items: center;
     background-image: url(img/btnani.gif);
 }
 
@@ -77,7 +76,7 @@ button{
     width: 300px;
     border-radius: 15px;
     padding: 1em 2em;
-    margin: 10px 60px;
+    margin: 5% 15%;
     font-size: 25px;
     border-color: var(--primary-text-color);
     outline: none;
@@ -133,14 +132,17 @@ footer{
 
     #content-textarea{
         display: flex;
-        align-items: center;
-        width: 80%;
+        width: 90%;
         height: 90%;
-        margin-left: 15%;
+        margin-left: 10%;
         outline: none;
         border: none;
         resize: none;
         font-size: 20px;
+    }
+
+    button{
+        align-items: center;
     }
 
     button:hover{
@@ -163,6 +165,7 @@ footer{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin-left: 10%;
         border-radius: 15px;
         width: 80%;
         height: 80%;
