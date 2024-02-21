@@ -76,7 +76,7 @@ button{
     width: 300px;
     border-radius: 15px;
     padding: 1em 2em;
-    margin: 5% 15%;
+    margin: 5%;
     font-size: 25px;
     border-color: var(--primary-text-color);
     outline: none;
@@ -143,6 +143,7 @@ footer{
 
     button{
         align-items: center;
+        margin-left: 10%;
     }
 
     button:hover{
@@ -165,7 +166,6 @@ footer{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-left: 10%;
         border-radius: 15px;
         width: 80%;
         height: 80%;
@@ -177,6 +177,7 @@ footer{
     }
 
     #copy-message{
-        margin-bottom: 30%;
+        align-items: center;
+        margin-bottom: 20%;
     }
 }
