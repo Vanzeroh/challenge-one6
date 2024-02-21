@@ -35,12 +35,15 @@ body {
     justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
+    width: 90%;
+    height: auto;
 }
 
 #content-textarea{
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
     height: 90%;
+    margin-left: 5%;
     outline: none;
     border: none;
     resize: none;
@@ -122,11 +125,6 @@ footer{
 
 @media only screen and (max-width: 768px){
 
-    body{
-        width: 95%;
-    }
-
-
     .content .container{
         display: flex;
         flex-direction: column; 
@@ -138,7 +136,7 @@ footer{
         align-items: center;
         width: 80%;
         height: 90%;
-        margin: 0 auto;
+        margin-left: 15%;
         outline: none;
         border: none;
         resize: none;
