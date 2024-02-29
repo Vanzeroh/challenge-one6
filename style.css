@@ -15,6 +15,9 @@
     display: inline-block;
     background-color: var(--primary-bg-color);
     margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    
 }
 
 body {
@@ -31,16 +34,17 @@ body {
 .content .container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 90%;
-    height: auto;
+    height: 90%;
 }
 
-#content-textarea{
+.content-textarea{
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
+    text-align: center;
     height: 90%;
     margin-left: 5%;
     outline: none;
@@ -64,8 +68,8 @@ p{
     flex-wrap: wrap;
     background-color: var(--primary-text-color);
     border-radius: 15px;
-    width: 40%;
-    height: 700px;
+    width: 25rem;
+    height: 90vh;
     padding: 1% 1%;
     box-shadow: 5px 3px 19px 6px var(--primary-text-color);
 }
@@ -95,8 +99,9 @@ button:active{
     transform: scale(1.2);
 }
 
-#crypted-message{
+.crypted-message{
     background-color: var(--primary-text-color);
+    text-align: center;
     width: 80%;
     height: 80%;
     color: black;
@@ -122,62 +127,11 @@ footer{
     height: 45px;
 }
 
-@media only screen and (max-width: 768px){
-
+@media (max-width: 768px){
     .content .container{
         display: flex;
-        flex-direction: column; 
-    }
-
-
-    #content-textarea{
-        display: flex;
-        width: 90%;
-        height: 90%;
-        margin-left: 10%;
-        outline: none;
-        border: none;
-        resize: none;
-        font-size: 20px;
-    }
-
-    button{
-        align-items: center;
-        margin-left: 10%;
-    }
-
-    button:hover{
-        width: 300px;
-        transform: scale(1.1);
-    }
-
-    footer{
-        display: flex;
         flex-direction: column;
-    }
-
-    #myname{
-        width: 90%;
         align-items: center;
     }
 
-
-    .content-right-pannel{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 15px;
-        width: 80%;
-        height: 80%;
-        padding: 1% 1%;
-    }
-
-    #crypted-message{
-        font-size: 2em;
-    }
-
-    #copy-message{
-        align-items: center;
-        margin-bottom: 20%;
-    }
 }

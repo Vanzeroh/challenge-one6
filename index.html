@@ -22,15 +22,15 @@
     <main class="content">
         <div class="container">
             <div class="left-pannel">
-                <textarea id="content-textarea" rows="15" cols="55" placeholder="inserta un texto solo en minusculas aquí"></textarea>
+                <textarea class="content-textarea" rows="15" cols="55" placeholder="inserta un texto solo en minusculas aquí"></textarea>
                 <div class="left-pannel-buttons">
-                    <button class="btnEncrypt">ENCRIPTAR</button>
-                    <button class="btnDecrypt">DESENCRIPTAR</button>
+                    <button class="btnCrypt" onclick="btnCrypt()">ENCRIPTAR</button>
+                    <button class="btnDecrypt" onclick="btnDecrypt()">DESENCRIPTAR</button>
                 </div>
             </div>
             <div class="content-right-pannel">
                 <p>MENSAJE ENCRIPTADO</p>
-                <textarea id="crypted-message" rows="10" cols="20"></textarea>
+                <textarea class="crypted-message" rows="10" cols="20"></textarea>
                 <button id="copy-message">COPIAR</button>
             </div>
         </div>
