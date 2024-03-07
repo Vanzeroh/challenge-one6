@@ -21,8 +21,8 @@
 }
 
 body {
-    width: auto;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     background-image: url(img/btnani.gif);
 }
 
@@ -34,7 +34,7 @@ body {
 .content .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 90%;
@@ -46,7 +46,6 @@ body {
     color: var(--primary-text-color);
     text-align: center;
     height: 90%;
-    margin-left: 5%;
     outline: none;
     border: none;
     resize: none;
@@ -128,10 +127,60 @@ footer{
 }
 
 @media (max-width: 768px){
-    .content .container{
+    main{
         display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content .container{
+        max-width: 100vw;
+        display: flex;
+        box-sizing: border-box;
         flex-direction: column;
         align-items: center;
     }
+
+
+.content-textarea{
+    width: 90vw;
+}
+
+.left-pannel-buttons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-right-pannel{
+    align-items: center;
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+.crypted-message{
+    height: 50vh;
+}
+
+footer{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100vh;
+}
+
+#myname{
+    max-width: 100vw;
+}
+
+#linkedIn, #gitHub{
+    max-width: 100vw;
+    align-items: center;
+}
 
 }
