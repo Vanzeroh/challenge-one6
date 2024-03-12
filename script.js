@@ -45,6 +45,20 @@ function decrypt(decryptedString){
     return decryptedString
 }
 
+//Copy Button
+
+function copyMessage(){
+    var copyText = document.querySelector(".crypted-message")
+
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+
+    navigator.clipboard.writeText(copyText.value);
+
+    alert("Texto Copiado");
+}
+
+
 
 
 
